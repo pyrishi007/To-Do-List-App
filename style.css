@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: "Josefin Sans", sans-serif;
+}
+
+
+.contanier{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0F2027 ,#203A43,#2C5364);
+    padding-top: 20px;
+
+}
+.card{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 445px;
+    margin: 100px auto 0px;
+    background: white;
+}
+.title{
+  padding-left: 15px;
+  display: flex;
+  justify-content: left;
+}
+
+p,img{
+    margin-bottom: 10px;
+    margin-right: 5px;
+    padding-left: 4px;
+}
+
+p{
+    color: #002765;
+    font-weight: bolder;
+    margin-top: 32px ;
+    font-size: large;
+}
+
+img{
+    margin-top: 27px ;
+    width: 30px;
+    height: 25px;
+}
+
+.textarea{
+    display: flex;
+    justify-content:  center;
+}       
+
+input{
+    outline: none;
+    border: none;
+    width: 85%;
+    border-radius: 45px;
+    font-size: large;
+    margin: 5px auto 20px;
+    text-align: left;
+    padding: 15px 20px;
+    background: #edeefe;
+}
+
+button{
+    outline: none;
+    font-size: large;
+    border: none;
+    margin: 5px auto 20px;
+    padding: 15px 30px;
+    border-radius: 45px;
+    position: absolute;
+    margin-right: -290px;
+    background-color: #ff740a;
+    color: white;
+}
+.listitem{
+
+    padding-bottom: 30px;
+}
+
+ul li{
+    list-style: none;
+    font-size: 17px;
+    padding: 7px 8px 10px 75px; 
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+
+} 
+
+ul li::before{
+    content: "";
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("./IMAGE/unchecked.png");
+    background-size: cover;
+    background-position: center;
+    top: 1px;
+    left: 37px;
+}
+
+ul li.checked{
+    color: #555;
+    text-decoration: line-through red;
+}
+
+ul li.checked::before{
+    background-image: url("./IMAGE/checked.png");
+}
+
+ul li span{
+    position: absolute;
+    color: #555;
+}
+ul li span{
+    margin-top: 2px;
+    right: 30px;
+    top: -2px;
+    width: 35px;
+    height: 35px;
+    font-size: 22px;
+    text-align: center;
+    line-height: 31px;
+}
+
+ul li span:hover{
+    background: #ff6161;
+    border-radius: 50%;
+    color: white;
+
+}
